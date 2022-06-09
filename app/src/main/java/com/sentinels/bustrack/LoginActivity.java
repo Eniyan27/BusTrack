@@ -44,8 +44,6 @@ public class LoginActivity extends AppCompatActivity {
     private void configureGoogleClient() {
         // Configure Google Sign In
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                // for the requestIdToken, this is in the values.xml file that
-                // is generated from your google-services.json
                 .requestIdToken(getString(com.firebase.ui.auth.R.string.default_web_client_id))
                 .requestEmail()
                 .build();
