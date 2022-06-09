@@ -73,7 +73,7 @@ public class MyService extends Service {
                 new NotificationCompat.Builder(this,CHANNEL_ID)
                         .setSmallIcon(R.drawable.our_logo)
                         .setContentTitle("Alert")
-                        .setContentText("Child out of range");
+                        .setContentText("Bus is almost here !");
 
         Intent notificationIntent = new Intent(this, MainActivity.class);
         PendingIntent contentIntent = PendingIntent.getActivity(this, 0, notificationIntent,
@@ -102,7 +102,7 @@ public class MyService extends Service {
         Log.d("Marker lat",String.valueOf(lat));
         Log.d("Marker lng",String.valueOf(lon));
         Log.d("Service distance",String.valueOf(distance(myLat,myLong,lat,lon)));
-        if(f > 5.0){
+        if(f < 5.0){
             Toast.makeText(this, "Yes", Toast.LENGTH_SHORT).show();
             addNotification();
         }
