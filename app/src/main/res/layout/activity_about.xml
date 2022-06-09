@@ -57,7 +57,7 @@
                     android:background="#0099FF"
                     app:layout_scrollFlags="scroll|enterAlways|snap"
                     app:menu="@menu/main_menu"
-                    app:title="CHILD TRACKING" />
+                    app:title="BUS TRACKING" />
 
             </com.google.android.material.appbar.AppBarLayout>
 

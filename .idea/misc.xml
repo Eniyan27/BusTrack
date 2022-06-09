@@ -3,8 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Eniyan/AndroidStudioProjects/BusTrack/app/src/main/res/drawable/bg_gradient.xml" value="0.2205" />
+        <entry key="..\:/Users/Eniyan/AndroidStudioProjects/BusTrack/app/src/main/res/layout/activity_about.xml" value="0.25" />
+        <entry key="..\:/Users/Eniyan/AndroidStudioProjects/BusTrack/app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="..\:/Users/Eniyan/AndroidStudioProjects/BusTrack/app/src/main/res/layout/activity_location.xml" value="0.19010416666666666" />
-        <entry key="..\:/Users/Eniyan/AndroidStudioProjects/BusTrack/app/src/main/res/layout/activity_sign.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/Eniyan/AndroidStudioProjects/BusTrack/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/Eniyan/AndroidStudioProjects/BusTrack/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Eniyan/AndroidStudioProjects/BusTrack/app/src/main/res/layout/activity_mainhome.xml" value="0.25" />
+        <entry key="..\:/Users/Eniyan/AndroidStudioProjects/BusTrack/app/src/main/res/layout/activity_map.xml" value="0.25" />
+        <entry key="..\:/Users/Eniyan/AndroidStudioProjects/BusTrack/app/src/main/res/layout/activity_sign.xml" value="0.2" />
         <entry key="..\:/Users/Eniyan/AndroidStudioProjects/Guardian/app/src/main/res/drawable/bg_btn_primary.xml" value="0.1865" />
         <entry key="..\:/Users/Eniyan/AndroidStudioProjects/Guardian/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.1925" />
         <entry key="..\:/Users/Eniyan/AndroidStudioProjects/Guardian/app/src/main/res/drawable/ic_email.xml" value="0.1505" />

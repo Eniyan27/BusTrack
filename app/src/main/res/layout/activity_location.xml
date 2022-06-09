@@ -44,7 +44,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
                     app:menu="@menu/main_menu"
-                    app:title="CHILD TRACKING"
+                    app:title="BUS TRACKING"
                     style="@style/Widget.MaterialComponents.Toolbar.Primary"
                     android:background="#0099FF"
                     app:layout_scrollFlags="scroll|enterAlways|snap"/>

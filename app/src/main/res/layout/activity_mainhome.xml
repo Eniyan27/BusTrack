@@ -43,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             app:menu="@menu/main_menu"
-            app:title="CHILD TRACKING"
+            app:title="BUS TRACKING"
             style="@style/Widget.MaterialComponents.Toolbar.Primary"
             android:background="#0099FF"
             app:layout_scrollFlags="scroll|enterAlways|snap"/>
@@ -83,12 +83,12 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="260dp"
-            android:layout_height="263dp"
+            android:layout_width="320dp"
+            android:layout_height="293dp"
             android:layout_marginStart="50dp"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="8dp"
-            android:src="@drawable/ill_music"
+            android:src="@drawable/bus"
             app:layout_anchor="@+id/view5"
             app:layout_anchorGravity="center"
             app:layout_constraintTop_toTopOf="parent" />
@@ -101,7 +101,7 @@
             android:layout_marginTop="500dp"
             android:layout_marginEnd="8dp"
             android:lineSpacingExtra="4dp"
-            android:text="Welcome to our \nChild Tracking App"
+            android:text="Welcome to our \nUrban Bus Tracking App"
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="#160E2C"
