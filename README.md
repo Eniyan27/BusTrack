@@ -1,4 +1,5 @@
 # Bus Track
+We are a team from Thiagarajar College of Engineering, Madurai developed a project as a part of Engineering Design Project which comes under our curriculum.
 
 BusTrack is a urban bus tracking app combined with IoT.
 
@@ -6,4 +7,4 @@ BusTrack is a urban bus tracking app combined with IoT.
 - Get the Location anywhere
 - Safe and secure 
 
- ## Made with :heart: by Tarun Kishore, Manoj, Eniyan, DayaAnand
+ ## Made with :heart: by Tarun Kishore, Manoj, Eniyan, Daya Anand
