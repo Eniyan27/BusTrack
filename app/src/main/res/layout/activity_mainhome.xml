@@ -83,12 +83,12 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="320dp"
-            android:layout_height="293dp"
+            android:layout_width="294dp"
+            android:layout_height="252dp"
             android:layout_marginStart="50dp"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="8dp"
-            android:src="@drawable/bus"
+            android:src="@drawable/ill_music"
             app:layout_anchor="@+id/view5"
             app:layout_anchorGravity="center"
             app:layout_constraintTop_toTopOf="parent" />
