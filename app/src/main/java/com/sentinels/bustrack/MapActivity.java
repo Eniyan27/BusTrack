@@ -254,7 +254,8 @@ public class MapActivity extends AppCompatActivity implements
 
         @Override
         public void onMyLocationClick(@NonNull Location location) {
-            Toast.makeText(this, "Current location:\n" + location, Toast.LENGTH_LONG).show();
+//            Toast.makeText(this, "Current location\n" + location, Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Current location", Toast.LENGTH_LONG).show();
         }
 
         @Override
