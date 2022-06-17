@@ -38,8 +38,10 @@ public class LocationActivity extends AppCompatActivity {
 
     private ActionBarDrawerToggle drawerToggle;
     FirebaseDatabase firebaseDatabase;
-    public static ArrayList<Double> latitude ;
-    public static ArrayList<Double> longitude;
+    public static Double latitude ;
+    public static Double longitude;
+    public static Double latitude1 ;
+    public static Double longitude1;
 
     DatabaseReference databaseReference;
     private TextView Latitude,Longitude,Lat1,Long1;
@@ -83,6 +85,7 @@ public class LocationActivity extends AppCompatActivity {
 //                Log.d("Latitude",latitude.toString());
 //                  String lati =  String.valueOf(latitude.get(latitude.size()-1));
                 String value = dataSnapshot.getValue(String.class);
+                latitude= Double.parseDouble(value);
                 Latitude.setText(value);
             }
 
@@ -101,6 +104,7 @@ public class LocationActivity extends AppCompatActivity {
 //                Log.d("Latitude",latitude.toString());
 //                  String lati =  String.valueOf(latitude.get(latitude.size()-1));
                 String value = dataSnapshot.getValue(String.class);
+                latitude1= Double.parseDouble(value);
                 Lat1.setText(value);
             }
 
@@ -119,6 +123,7 @@ public class LocationActivity extends AppCompatActivity {
 //                Log.d("Longitude",longitude.toString());
 //                String longi =  String.valueOf(longitude.get(longitude.size()-1));
                 String value = dataSnapshot.getValue(String.class);
+                longitude= Double.parseDouble(value);
                 Longitude.setText(value);
             }
 
@@ -137,6 +142,7 @@ public class LocationActivity extends AppCompatActivity {
 //                Log.d("Longitude",longitude.toString());
 //                String longi =  String.valueOf(longitude.get(longitude.size()-1));
                 String value = dataSnapshot.getValue(String.class);
+                longitude1= Double.parseDouble(value);
                 Long1.setText(value);
             }
 

@@ -59,8 +59,12 @@ public class MapActivity extends AppCompatActivity implements
     private LocationManager locationManager;
     private ActionBarDrawerToggle drawerToggle;
 
-    private double parsedLat =  LocationActivity.latitude != null ? LocationActivity.latitude.get(LocationActivity.latitude.size()-1):0;
-    private double parseLong = LocationActivity.longitude != null ? LocationActivity.longitude.get(LocationActivity.longitude.size()-1):0;
+    private double parsedLat =  LocationActivity.latitude != null ? LocationActivity.latitude :0;
+    private double parseLong = LocationActivity.longitude != null ? LocationActivity.longitude :0;
+
+    private double parsedLat1 =  LocationActivity.latitude1 != null ? LocationActivity.latitude1 :0;
+    private double parseLong1 = LocationActivity.longitude1 != null ? LocationActivity.longitude1 :0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -259,7 +263,8 @@ public class MapActivity extends AppCompatActivity implements
             this.map.setOnMyLocationButtonClickListener(this);
             this.map.setOnMyLocationClickListener(this);
             this.map.setOnMapClickListener(this);
-            this.map.addMarker(new MarkerOptions().position(new LatLng(parsedLat,parseLong)).title(String.valueOf(parsedLat)+String.valueOf(parseLong)));
+            this.map.addMarker(new MarkerOptions().position(new LatLng(parsedLat,parseLong)).title("BUS 1"));
+            this.map.addMarker(new MarkerOptions().position(new LatLng(parsedLat1,parseLong1)).title("BUS 2"));
             enableMyLocation();
         }
     }
