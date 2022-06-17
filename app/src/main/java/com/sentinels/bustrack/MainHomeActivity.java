@@ -50,7 +50,7 @@ public class MainHomeActivity extends AppCompatActivity {
         // Tie DrawerLayout events to the ActionBarToggle
         mDrawer.addDrawerListener(drawerToggle);
         NavigationView nvDrawer = (NavigationView) findViewById(R.id.nvView);
-        // Setup drawer view
+
         setupDrawerContent(nvDrawer);
 
         btn.setOnClickListener(v -> {
