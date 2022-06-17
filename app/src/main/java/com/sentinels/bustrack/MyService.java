@@ -103,10 +103,10 @@ public class MyService extends Service {
         Log.d("Marker lng",String.valueOf(lon));
         Log.d("Service distance",String.valueOf(distance(myLat,myLong,lat,lon)));
         if(f < 5.0){
-            Toast.makeText(this, "Yes", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Bus is within 5 KM from your location", Toast.LENGTH_SHORT).show();
             addNotification();
         }
-        Toast.makeText(this, "Hello there", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Bus is far from your location", Toast.LENGTH_SHORT).show();
         return START_STICKY;
     }
 
