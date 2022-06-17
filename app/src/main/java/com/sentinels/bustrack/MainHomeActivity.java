@@ -5,6 +5,7 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -24,6 +25,7 @@ public class MainHomeActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawer;
     private Toolbar toolbar;
+    private Button btn;
 
     private ActionBarDrawerToggle drawerToggle;
 
@@ -33,6 +35,7 @@ public class MainHomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_mainhome);
 
         Toolbar mtoolbar = findViewById(R.id.main_toolbar);
+        Button btn = findViewById(R.id.getstart);
         setSupportActionBar(mtoolbar);
         // This will display an Up icon (<-), we will replace it with hamburger later
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
@@ -49,6 +52,11 @@ public class MainHomeActivity extends AppCompatActivity {
         NavigationView nvDrawer = (NavigationView) findViewById(R.id.nvView);
         // Setup drawer view
         setupDrawerContent(nvDrawer);
+
+        btn.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(),LocationActivity.class);
+            startActivity(intent);
+        });
     }
 
     private ActionBarDrawerToggle setupDrawerToggle() {
