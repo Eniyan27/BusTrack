@@ -64,12 +64,12 @@ public class SignInActivity extends AppCompatActivity {
         // Configure Google Client
         configureGoogleClient();
 
-//      btn.setOnClickListener(v -> loginUserAccount());
+      btn.setOnClickListener(v -> loginUserAccount());
 
-        btn.setOnClickListener(v -> {
-            Intent intent = new Intent(getApplicationContext(),MainHomeActivity.class);
-            startActivity(intent);
-        });
+//        btn.setOnClickListener(v -> {
+//            Intent intent = new Intent(getApplicationContext(),MainHomeActivity.class);
+//            startActivity(intent);
+//        });
 
         lgnBtn.setOnClickListener(v -> {
             Intent intent2 = new Intent(getApplicationContext(),RegistrationActivity.class);

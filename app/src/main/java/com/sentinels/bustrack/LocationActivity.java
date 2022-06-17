@@ -42,7 +42,7 @@ public class LocationActivity extends AppCompatActivity {
     public static ArrayList<Double> longitude;
 
     DatabaseReference databaseReference;
-    private TextView Latitude,Longitude;
+    private TextView Latitude,Longitude,Lat1,Long1;
 
     private ArrayList<Double> getCoord(Map<String,String> vals){
         ArrayList<Double> temp  =  new ArrayList<>();
@@ -60,25 +60,48 @@ public class LocationActivity extends AppCompatActivity {
 
         Latitude = findViewById(R.id.latitude);
         Longitude = findViewById(R.id.longitude);
-
+        Lat1 = findViewById(R.id.latitude1);
+        Long1 = findViewById(R.id.longitude1);
         // below line is used to get the instance
         // of our Firebase database.
         firebaseDatabase = FirebaseDatabase.getInstance();
 
         // below line is used to get
         // reference for our database.
-        DatabaseReference  loc = firebaseDatabase.getInstance().getReference("location");
+        DatabaseReference  loc = firebaseDatabase.getInstance().getReference("bus1");
         DatabaseReference lat = loc.child("latitude");
         DatabaseReference lon = loc.child("longitude");
+
+        DatabaseReference  loc1 = firebaseDatabase.getInstance().getReference("bus2");
+        DatabaseReference lat1 = loc1.child("latitude");
+        DatabaseReference lon1 = loc1.child("longitude");
 
         lat.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                latitude = getCoord((Map<String,String>)dataSnapshot.getValue());
-                Log.d("Latitude",latitude.toString());
+//                latitude = getCoord((Map<String,String>)dataSnapshot.getValue());
+//                Log.d("Latitude",latitude.toString());
+//                  String lati =  String.valueOf(latitude.get(latitude.size()-1));
+                String value = dataSnapshot.getValue(String.class);
+                Latitude.setText(value);
+            }
 
-                String lati =  String.valueOf(latitude.get(latitude.size()-1));
-                Latitude.setText(lati);
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                // calling on cancelled method when we receive
+                // any error or we are not able to get the data.
+                Toast.makeText(LocationActivity.this, "Fail to get data.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        lat1.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+//                latitude = getCoord((Map<String,String>)dataSnapshot.getValue());
+//                Log.d("Latitude",latitude.toString());
+//                  String lati =  String.valueOf(latitude.get(latitude.size()-1));
+                String value = dataSnapshot.getValue(String.class);
+                Lat1.setText(value);
             }
 
             @Override
@@ -92,11 +115,29 @@ public class LocationActivity extends AppCompatActivity {
         lon.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                longitude = getCoord((Map<String,String>)dataSnapshot.getValue());
-                Log.d("Longitude",longitude.toString());
-                String longi =  String.valueOf(longitude.get(longitude.size()-1));
+//                longitude = getCoord((Map<String,String>)dataSnapshot.getValue());
+//                Log.d("Longitude",longitude.toString());
+//                String longi =  String.valueOf(longitude.get(longitude.size()-1));
+                String value = dataSnapshot.getValue(String.class);
+                Longitude.setText(value);
+            }
 
-                Longitude.setText(longi);
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                // calling on cancelled method when we receive
+                // any error or we are not able to get the data.
+                Toast.makeText(LocationActivity.this, "Fail to get data.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        lon1.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+//                longitude = getCoord((Map<String,String>)dataSnapshot.getValue());
+//                Log.d("Longitude",longitude.toString());
+//                String longi =  String.valueOf(longitude.get(longitude.size()-1));
+                String value = dataSnapshot.getValue(String.class);
+                Long1.setText(value);
             }
 
             @Override

@@ -54,14 +54,14 @@
 
             <TextView
                 android:id="@+id/loc"
-                android:layout_width="185dp"
+                android:layout_width="292dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="100dp"
                 android:layout_marginEnd="8dp"
                 android:lineSpacingExtra="4dp"
-                android:text="LOCATION"
+                android:text="BUS 1 - LOCATION"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="#160E2C"
@@ -75,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="50dp"
-                android:layout_marginTop="200dp"
+                android:layout_marginTop="150dp"
                 android:layout_marginEnd="8dp"
                 android:lineSpacingExtra="4dp"
                 android:text="LATITUDE : "
@@ -92,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="50dp"
-                android:layout_marginTop="250dp"
+                android:layout_marginTop="190dp"
                 android:layout_marginEnd="8dp"
                 android:lineSpacingExtra="4dp"
                 android:textAlignment="center"
@@ -108,7 +108,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="50dp"
-                android:layout_marginTop="300dp"
+                android:layout_marginTop="230dp"
                 android:layout_marginEnd="8dp"
                 android:lineSpacingExtra="4dp"
                 android:text="LONGITUDE : "
@@ -125,7 +125,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="50dp"
-                android:layout_marginTop="350dp"
+                android:layout_marginTop="270dp"
                 android:layout_marginEnd="8dp"
                 android:lineSpacingExtra="4dp"
                 android:textAlignment="center"
@@ -135,6 +135,89 @@
                 app:layout_anchor="@+id/loc"
                 app:layout_anchorGravity="bottom|center" />
 
+
+            <TextView
+                android:id="@+id/loc1"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="340dp"
+                android:layout_marginEnd="8dp"
+                android:lineSpacingExtra="4dp"
+                android:text="BUS 2 - LOCATION"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#160E2C"
+                android:textSize="30sp"
+                app:layout_anchor="@+id/nestedScrollView"
+                app:layout_anchorGravity="bottom|center" />
+
+            <TextView
+                android:id="@+id/lat1"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="390dp"
+                android:layout_marginEnd="8dp"
+                android:lineSpacingExtra="4dp"
+                android:text="LATITUDE : "
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#160E2C"
+                android:textSize="20sp"
+                app:layout_anchor="@+id/loc"
+                app:layout_anchorGravity="bottom|center" />
+
+            <TextView
+                android:id="@+id/latitude1"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="430dp"
+                android:layout_marginEnd="8dp"
+                android:lineSpacingExtra="4dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#160E2C"
+                android:textSize="20sp"
+                app:layout_anchor="@+id/loc"
+                app:layout_anchorGravity="bottom|center" />
+
+            <TextView
+                android:id="@+id/lon1"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="470dp"
+                android:layout_marginEnd="8dp"
+                android:lineSpacingExtra="4dp"
+                android:text="LONGITUDE : "
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#160E2C"
+                android:textSize="20sp"
+                app:layout_anchor="@+id/loc"
+                app:layout_anchorGravity="bottom|center" />
+
+            <TextView
+                android:id="@+id/longitude1"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="510dp"
+                android:layout_marginEnd="8dp"
+                android:lineSpacingExtra="4dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#160E2C"
+                android:textSize="20sp"
+                app:layout_anchor="@+id/loc"
+                app:layout_anchorGravity="bottom|center" />
 
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
         <FrameLayout

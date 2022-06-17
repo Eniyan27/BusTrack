@@ -196,7 +196,7 @@ public class MapActivity extends AppCompatActivity implements
         @SuppressLint("MissingPermission")
         @Override
         public boolean onMyLocationButtonClick() {
-            Toast.makeText(this, "MyLocation button clicked", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Current Location Clicked!", Toast.LENGTH_SHORT).show();
             fusedLocationClient.getLastLocation().addOnSuccessListener(this,location->{
                 if(location!=null){
                     latii = location.getLatitude();
